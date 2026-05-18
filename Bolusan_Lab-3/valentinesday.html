@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine's Day Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Valentine's Day Survey</h1>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Your Name:</label>
+            <input class="textinput" type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="date">Special Date:</label>
+            <input class="textinput" type="date" id="date" name="date">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Valentine's Preferences</legend>
+            
+            <label for="gift">Favorite Valentine's Gift:</label>
+            <select id="gift" name="gift">
+                <option value="">-- Choose a gift --</option>
+                <option value="flowers">Flowers</option>
+                <option value="chocolate">Chocolates</option>
+                <option value="jewelry">Jewelry</option>
+                <option value="dinner">Romantic Dinner</option>
+                <option value="getaway">Getaway Trip</option>
+            </select>
+            
+            <label for="color">Favorite Valentine's Color:</label>
+            <select id="color" name="color">
+                <option value="">-- Choose a color --</option>
+                <option value="red">Red </option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="purple">Purple</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Romantic Activities</legend>
+            
+            <label>Which activities do you enjoy?</label>
+            <div>
+                <input type="checkbox" id="movies" name="activities" value="movies">
+                <label for="movies" style="display: inline;">Movies</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="walk" name="activities" value="walk">
+                <label for="walk" style="display: inline;">Sunset Walks</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="cooking" name="activities" value="cooking">
+                <label for="cooking" style="display: inline;">Cooking Together</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="dancing" name="activities" value="dancing">
+                <label for="dancing" style="display: inline;">Dancing</label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your Love Story</legend>
+            
+            <label for="message">Share your favorite romantic memory:</label>
+            <textarea id="message" name="message" placeholder="Tell us about a special moment..."></textarea>
+            
+            <label>Relationship Status:</label>
+            <div>
+                <input type="radio" id="single" name="status" value="single">
+                <label for="single" style="display: inline;">Single</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="relationship" name="status" value="relationship">
+                <label for="relationship" style="display: inline;">In a Relationship</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="complicated" name="status" value="complicated">
+                <label for="complicated" style="display: inline;">It's Complicated</label>
+            </div>
+        </fieldset>
+        
+        <button type="submit">Send Your Love</button>
+    </form>
+
+</body>
+</html>
